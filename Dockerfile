@@ -1,4 +1,4 @@
-FROM markvnext/mono
+FROM mono:3.12
 
 MAINTAINER Sean McAdams <sean.j.mcadams@gmail.com>
 
