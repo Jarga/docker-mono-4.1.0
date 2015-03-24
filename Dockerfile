@@ -11,7 +11,8 @@ RUN apt-get update -y \
 #Move to mono directory for build process
 WORKDIR mono
 
-RUN ./autogen.sh --prefix="/usr/local" 
-RUN make
-RUN make install
+RUN ./autogen.sh --prefix="/usr/local" \
+    && make \
+    && make install \
+    && rm /mono -r
 
